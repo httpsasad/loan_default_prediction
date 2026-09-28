@@ -1,0 +1,83 @@
+{
+  "selected_model": "stacking_ensemble",
+  "best_accuracy_percent": 98.33,
+  "default_threshold": 0.545,
+  "features": [
+    "loan_amnt",
+    "term",
+    "int_rate",
+    "installment",
+    "annual_inc",
+    "dti",
+    "home_ownership",
+    "verification_status",
+    "purpose",
+    "open_acc",
+    "pub_rec",
+    "revol_bal",
+    "revol_util",
+    "total_acc",
+    "mort_acc",
+    "delinq_2yrs",
+    "inq_last_6mths",
+    "credit_history_years"
+  ],
+  "target": "default",
+  "models": [
+    {
+      "model": "logistic_regression",
+      "accuracy": 0.9823,
+      "accuracy_percent": 98.23,
+      "precision_default": 0.9647,
+      "recall_default": 0.9544,
+      "f1_default": 0.9595,
+      "roc_auc": 0.998,
+      "pr_auc": 0.9938,
+      "optimal_threshold": 0.72
+    },
+    {
+      "model": "random_forest",
+      "accuracy": 0.9643,
+      "accuracy_percent": 96.43,
+      "precision_default": 0.9352,
+      "recall_default": 0.8997,
+      "f1_default": 0.9171,
+      "roc_auc": 0.9939,
+      "pr_auc": 0.9803,
+      "optimal_threshold": 0.53
+    },
+    {
+      "model": "xgboost",
+      "accuracy": 0.9727,
+      "accuracy_percent": 97.27,
+      "precision_default": 0.9034,
+      "recall_default": 0.9802,
+      "f1_default": 0.9402,
+      "roc_auc": 0.9977,
+      "pr_auc": 0.9929,
+      "optimal_threshold": 0.195
+    },
+    {
+      "model": "lightgbm",
+      "accuracy": 0.9703,
+      "accuracy_percent": 97.03,
+      "precision_default": 0.9001,
+      "recall_default": 0.9726,
+      "f1_default": 0.935,
+      "roc_auc": 0.9973,
+      "pr_auc": 0.9915,
+      "optimal_threshold": 0.15
+    },
+    {
+      "model": "stacking_ensemble",
+      "accuracy": 0.9833,
+      "accuracy_percent": 98.33,
+      "precision_default": 0.9648,
+      "recall_default": 0.959,
+      "f1_default": 0.9619,
+      "roc_auc": 0.9982,
+      "pr_auc": 0.9946,
+      "optimal_threshold": 0.545
+    }
+  ]
+}

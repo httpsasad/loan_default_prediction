@@ -1,0 +1,51 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;background:#f4f7fb;color:#172033}
+.app{max-width:1280px;margin:auto;padding:36px 24px}
+header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px}
+h1{font-size:36px;margin:6px 0 8px;letter-spacing:-1.2px;color:#0f172a}
+h2{margin:0 0 18px;font-size:19px;color:#1e293b}
+.eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:#3b82f6}
+.badge{padding:8px 16px;border-radius:999px;background:#e0f2fe;color:#0369a1;font-weight:700;font-size:14px}
+header p{color:#64748b;margin:0;font-size:15px}
+.app main{display:grid;grid-template-columns:1.45fr 0.85fr;gap:24px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:24px;box-shadow:0 10px 30px rgba(15,23,42,.05)}
+.preset-bar{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.preset-btn{padding:8px 14px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;border:1px solid #cbd5e1;background:#f8fafc;color:#334155;transition:all .2s}
+.preset-btn:hover{background:#e2e8f0;transform:translateY(-1px)}
+.preset-btn.low-btn{border-color:#bbf7d0;background:#f0fdf4;color:#166534}
+.preset-btn.med-btn{border-color:#fef08a;background:#fefce8;color:#854d0e}
+.preset-btn.high-btn{border-color:#fecaca;background:#fef2f2;color:#991b1b}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+label{font-size:12px;font-weight:700;color:#475569;display:flex;flex-direction:column;gap:5px}
+input,select{border:1px solid #cbd5e1;border-radius:8px;padding:10px 12px;font:inherit;color:#0f172a;background:#fff;transition:border .15s}
+input:focus,select:focus{outline:2px solid #93c5fd;border-color:#3b82f6}
+button.submit-btn{width:100%;margin-top:20px;border:0;border-radius:10px;padding:14px;background:#0f172a;color:#fff;font-size:15px;font-weight:800;cursor:pointer;transition:background .2s}
+button.submit-btn:hover{background:#1e293b}
+button.submit-btn:disabled{opacity:.6}
+.result{min-height:420px}
+.empty{padding:80px 10px;text-align:center;color:#94a3b8}
+.risk-header{display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:16px}
+.risk{text-align:center;border-radius:12px;padding:14px 20px;font-size:20px;font-weight:900;letter-spacing:1px;flex:1}
+.risk.very_low,.risk.low{background:#dcfce7;color:#15803d;border:1px solid #86efac}
+.risk.medium{background:#fef9c3;color:#a16207;border:1px solid #fde047}
+.risk.high,.risk.critical{background:#fee2e2;color:#b91c1c;border:1px solid #fca5a5}
+.grade-badge{padding:14px 18px;border-radius:12px;font-size:22px;font-weight:900;background:#0f172a;color:#fff;min-width:60px;text-align:center}
+.decision-banner{text-align:center;padding:10px;border-radius:8px;font-weight:800;font-size:14px;margin-bottom:16px;letter-spacing:.5px}
+.decision-banner.approve{background:#f0fdf4;color:#15803d;border:1px solid #bbf7d0}
+.decision-banner.manual_review{background:#fffbebf;color:#b45309;border:1px solid #fde68a}
+.decision-banner.reject{background:#fef2f2;color:#b91c1c;border:1px solid #fecaca}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.metrics div{border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px;background:#f8fafc}
+.metrics span{display:block;font-size:11px;color:#64748b;margin-bottom:4px;font-weight:600}
+.metrics strong{font-size:20px;color:#0f172a}
+.bar{height:10px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin-bottom:16px}
+.bar div{height:100%;transition:width .4s ease}
+.shap-section{margin-top:20px;border-top:1px solid #e2e8f0;padding-top:16px}
+.shap-title{font-size:13px;font-weight:800;color:#334155;margin-bottom:10px}
+.shap-chips{display:flex;flex-wrap:wrap;gap:8px}
+.shap-chip{font-size:11px;font-weight:700;padding:6px 10px;border-radius:6px;display:inline-flex;align-items:center;gap:4px}
+.shap-chip.increases{background:#fef2f2;color:#991b1b;border:1px solid #fecaca}
+.shap-chip.decreases{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0}
+.notice{font-size:11px;line-height:1.5;color:#64748b;background:#f1f5f9;border-radius:8px;padding:10px;margin-top:18px}
+.error{color:#b91c1c;background:#fef2f2;padding:14px;border-radius:10px;line-height:1.5;font-size:13px}
+@media(max-width:900px){.app main{grid-template-columns:1fr}header{gap:15px}.grid{grid-template-columns:1fr}}

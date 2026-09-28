@@ -1,0 +1,20 @@
+{
+  "loan_amnt": 12000,
+  "term": "36 months",
+  "int_rate": 11.5,
+  "installment": 395.2,
+  "annual_inc": 65000,
+  "dti": 18.5,
+  "home_ownership": "RENT",
+  "verification_status": "Verified",
+  "purpose": "debt_consolidation",
+  "open_acc": 8,
+  "pub_rec": 0,
+  "revol_bal": 7200,
+  "revol_util": 42,
+  "total_acc": 18,
+  "mort_acc": 1,
+  "delinq_2yrs": 0,
+  "inq_last_6mths": 1,
+  "credit_history_years": 8
+}
